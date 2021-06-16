@@ -66,7 +66,7 @@ export default function SignIn() {
             required
             fullWidth
             id="email"
-            label="Email Address"
+            label="Username"
             name="email"
             autoComplete="email"
             autoFocus
@@ -80,10 +80,6 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-          />
-          <FormControlLabel
-            control={<Checkbox value="remember" color="primary" />}
-            label="Remember me"
           />
           <Button
             type="submit"
@@ -111,10 +107,7 @@ export default function SignIn() {
         <br/>
         <br/>
         <Divider variant="middle" />
-        <h4 color="primary">Or Sign In using</h4>
-        <FacebookIcon color="primary"  style={{ fontSize: 30 }}>Sign In using Facebook</FacebookIcon>
-        <LinkedInIcon color="primary"  style={{ fontSize: 30 }}>Sign In using LinkedIn</LinkedInIcon>
-      
+
       </div>
       <Box mt={8}>
         <Copyright />
